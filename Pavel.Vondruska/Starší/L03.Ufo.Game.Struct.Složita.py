@@ -8,7 +8,7 @@
 #   složenou z předpřipravených struktur.
 #
 # HLAVNÍ MECHANIKY:
-#   - spust kr - vygeneruje kruh = ufo
+#   - spust kr - vygeneruje kruh = ufo vytvořené z 3 vrstev bloků
 #   - spust game_kr <num12> - vygeneruje num12 kopií struktury
 #   - spust game_ufo3 <num123> - vygeneruje num123 kopií struktury a k 
 #      nim náhodně rozmístí krychle a stromy
