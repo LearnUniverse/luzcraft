@@ -57,6 +57,11 @@ def build_corner_tower_platform(material, baseX, baseY, baseZ):
         world(baseX, baseY + 3, baseZ),
         world(baseX + 4, baseY + 3, baseZ + 4),
         FillOperation.REPLACE)
+    # 4b. Vrstva (y = 3): Mezipatro / Stropni dira 4x4
+    blocks.fill(AIR,
+        world(baseX + 1, baseY + 3, baseZ + 1),
+        world(baseX + 3, baseY + 3, baseZ + 3),
+        FillOperation.REPLACE)
 
     # 5. Vrstva (y = 4): Rohové věžičky (4 samostatné bloky v rozích)
     blocks.place(material, world(baseX, baseY + 4, baseZ))
