@@ -69,4 +69,15 @@ def on_on_chat():
     build_corner_tower_platform(GRASS, 0, 0, 0)
 
 # Spuštění příkazem "stavba" v chatu
+mx = 0
+My = 0
+mz = 0
+# Spuštění příkazem "stavba" v chatu
+
+def on_on_chat():
+    global mx, My, mz
+    mx = player.position().get_value(Axis.X)
+    My = player.position().get_value(Axis.Y)
+    mz = player.position().get_value(Axis.Z)
+    obracena_stolicka(CYAN_WOOL, mx, My, mz + 5)
 player.on_chat("stavba", on_on_chat)
